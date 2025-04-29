@@ -1,1 +1,3 @@
-=== Università del Piemonte Orientale Open data Repository ===
+Università del Piemonte Orientale Open data Repository
+======================================
+
