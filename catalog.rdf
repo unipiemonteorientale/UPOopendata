@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:locn="http://www.w3.org/ns/locn#" xmlns:hydra="http://www.w3.org/ns/hydra/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsp="http://www.opengis.net/ont/geosparql#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+
+<dcatapit:Catalog rdf:about="https://github.com/unipiemonteorientale/UPOopendata">
+  <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+  <dct:title>Università degli Studi del Piemonte Orientale</dct:title>
+  <dct:publisher>
+    <dcatapit:Agent rdf:about="uni_por">
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      <dct:identifier>uni_por</dct:identifier>
+      <foaf:name>Ufficio Data Mining and Managing</foaf:name>
+    </dcatapit:Agent>
+  </dct:publisher>
+  <dct:description>Portale OPEN DATA UPO</dct:description>
+  <dct:language>it</dct:language>
+  <foaf:homepage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata#"/>
+  <dcat:themeTaxonomy>
+    <skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/data-theme">
+      <dct:title>Data Theme Vocabulary</dct:title>
+    </skos:ConceptScheme>
+  </dcat:themeTaxonomy>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+  <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+  <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/offerta-formativa"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/laureati"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dottorati-di-ricerca"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dottorandi"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/numero-prodotti-della-ricerca"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-prodotti-della-ricerca"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/numero-progetti-ricerca"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-progetti-di-ricerca"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/immatricolati-puri"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/iscritti"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/personale-docente-e-ricercatore"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/personale-tecnico-amministrativo"/>
+  <dcat:dataset rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole"/>
+  </dcatapit:Catalog>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/offerta-formativa">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Offerta formativa</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi ai corsi di laurea triennale, di laurea magistrale a ciclo unico e di laurea magistrale raggruppati per sede, durata, lingua di erogazione. A partire da a.a 23-24</dct:description>
+    <dct:identifier>uni_por:offerta-formativa</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/offerta-formativa/csv2"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/laureati">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Laureati</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi ai laureati raggruppati per Corso di laurea. A partire da a.a 22-23</dct:description>
+    <dct:identifier>uni_por:laureati</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/laureati/csv3"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorati-di-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Dottorati di ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Numero di Dottorati attivi per struttura di riferimento. A partire da a.a 23-24</dct:description>
+    <dct:identifier>uni_por:dottorati-di-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dottorati-di-ricerca/csv4"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorandi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Dottorandi</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Numero di Dottoranti raggruppati per struttura di afferenza e curricula. A partire da a.a 23-24</dct:description>
+    <dct:identifier>uni_por:dottorandi</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dottorandi/csv5"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-prodotti-della-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Numero Prodotti della Ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati quantitativi relativi al numero di prodotti di ricerca approvati nel periodo 2021-2023</dct:description>
+    <dct:identifier>uni_por:numero-prodotti-della-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/numero-prodotti-della-ricerca/csv6"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-prodotti-della-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Dettaglio Prodotti della Ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi ai prodotti di ricerca articolati per tipologia, titolo. Nel periodo 2021-2023</dct:description>
+    <dct:identifier>uni_por:dettaglio-prodotti-della-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-prodotti-della-ricerca/csv7"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-progetti-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Numero Progetti Ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati quantitativi relativi al numero di progetti di ricerca approvati nel periodo 2021-2023</dct:description>
+    <dct:identifier>uni_por:numero-progetti-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/numero-progetti-ricerca/csv8"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-progetti-di-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Dettaglio Progetti di Ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi ai progetti di ricerca articolati per tipologia, titolo. Nel periodo 2021-2023</dct:description>
+    <dct:identifier>uni_por:dettaglio-progetti-di-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-progetti-di-ricerca/csv9"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/immatricolati-puri">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Immatricolati puri</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi al numero di studenti immatricolati la prima volta in Ateneo a un Corso di laurea triennale o Magistrale a ciclo unico raggruppati per tipologia di corso. A partire da a.a 23-24</dct:description>
+    <dct:identifier>uni_por:immatricolati-puri</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/immatricolati-puri/csv10"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/iscritti">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Iscritti</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi al numero di studenti che hanno preso iscrizione in Ateneo a un Corso di laurea raggruppati per tipologia di corso. A partire da a.a 23-24</dct:description>
+    <dct:identifier>uni_por:iscritti</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/iscritti/csv11"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-docente-e-ricercatore">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Personale docente e ricercatore</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi alla consistenza numerica del personale docente e ricercatore in servizio al termine di ciascun anno solare a partire dal 2023 raggruppati per afferenza organizzativa, ruolo e GSD</dct:description>
+    <dct:identifier>uni_por:personale-docente-e-ricercatore</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/personale-docente-e-ricercatore/csv12"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-tecnico-amministrativo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Personale Tecnico-Amministrativo</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi al numero di unità di personale tecnico-amministrativo in servizio al termine di ciascun anno solare a partire dal 2023 raggruppati per afferenza organizzativa e inquadramento</dct:description>
+    <dct:identifier>uni_por:personale-tecnico-amministrativo</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/personale-tecnico-amministrativo/csv13"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Dipartimenti-Scuole</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/unipiemonteorientale/UPOopendata.git/"/>
+    <dct:description>Dati relativi al numero di dipartimenti, sede, url e pec. A partire da a.a. 202-/25</dct:description>
+    <dct:identifier>uni_por:dipartimenti-scuole</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="uni_por">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>uni_por</dct:identifier>
+        <foaf:name>Università degli Studi del Piemonte Orientale</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-20</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+    <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole/csv14"/>
+  </dcatapit:Dataset>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/offerta-formativa/csv2">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24-OFF-UPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-OFF-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/laureati/csv3">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/22-23-Laureati-UPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>22-23-Laureati-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorati-di-ricerca/csv4">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5F39ciclo%5FDottorati%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-39ciclo-Dottorati-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorandi/csv5">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/22-23%5FDottorandi%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>22-23-Dottorandi-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-prodotti-della-ricerca/csv6">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FNum%5FPubblicazioni%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>21-23-Num-Pubblicazioni-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-prodotti-della-ricerca/csv7">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FElencoPubblicazioni%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>21-23-ElencoPubblicazioni-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-progetti-ricerca/csv8">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FNum-Progetti%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>21-23-Num-Progetti-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-progetti-di-ricerca/csv9">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FElencoProgetti%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>21-23-ElencoProgetti-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/immatricolati-puri/csv10">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FmatricolePURE%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-matricolePURE-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/iscritti/csv11">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FIscritti%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-Iscritti-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-docente-e-ricercatore/csv12">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FDocentiRic%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-DocentiRic-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-tecnico-amministrativo/csv13">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FPTAB%5FUPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>23-24-PTAB-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole/csv14">
+    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/24-25-dipartimenti-UPO.csv"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>24-25-dipartimenti-UPO CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+<dcatapit:Organization rdf:about="https://www.uniupo.it/it/open-data-upo">
+  <rdf:type rdf:resource="vcard:Organization"/>
+  <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+  <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+  <rdf:type rdf:resource="vcard:Kind"/>
+  <vcard:fn>Università degli Studi del Piemonte Orientale</vcard:fn>
+  <vcard:hasEmail rdf:resource="datamanaging@uniupo.it"/>
+  <vcard:hasTelephone>0161261579</vcard:hasTelephone>
+  <vcard:hasURL rdf:resource="https://www.uniupo.it/it/open-data-upo"/>
+</dcatapit:Organization>
+</rdf:RDF>
