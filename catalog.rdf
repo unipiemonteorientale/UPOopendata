@@ -586,9 +586,9 @@
     <dcat:distribution rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole/csv14"/>
   </dcatapit:Dataset>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/offerta-formativa/csv2">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24-OFF-UPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24-OFF-UPO.csv"/>
     <dct:license>
-      <dcatapit:LicenseDocument rdf:about="">
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
         <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
         <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
@@ -601,9 +601,9 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/laureati/csv3">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/22-23-Laureati-UPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/22-23-Laureati-UPO.csv"/>
     <dct:license>
-      <dcatapit:LicenseDocument rdf:about="">
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
         <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
         <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
@@ -616,9 +616,9 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorati-di-ricerca/csv4">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5F39ciclo%5FDottorati%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24%5F39ciclo%5FDottorati%5FUPO.csv"/>
     <dct:license>
-      <dcatapit:LicenseDocument rdf:about="">
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
         <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
         <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
@@ -631,7 +631,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dottorandi/csv5">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/22-23%5FDottorandi%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/22-23%5FDottorandi%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -646,7 +646,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-prodotti-della-ricerca/csv6">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FNum%5FPubblicazioni%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/21-23%5FNum%5FPubblicazioni%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -661,7 +661,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-prodotti-della-ricerca/csv7">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FElencoPubblicazioni%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/21-23%5FElencoPubblicazioni%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -676,7 +676,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/numero-progetti-ricerca/csv8">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FNum-Progetti%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/21-23%5FNum-Progetti%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -691,7 +691,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dettaglio-progetti-di-ricerca/csv9">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/21-23%5FElencoProgetti%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/21-23%5FElencoProgetti%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -706,7 +706,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/immatricolati-puri/csv10">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FmatricolePURE%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24%5FmatricolePURE%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -721,7 +721,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/iscritti/csv11">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FIscritti%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24%5FIscritti%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -736,7 +736,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-docente-e-ricercatore/csv12">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FDocentiRic%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24%5FDocentiRic%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -751,7 +751,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/personale-tecnico-amministrativo/csv13">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/23-24%5FPTAB%5FUPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/23-24%5FPTAB%5FUPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
@@ -766,7 +766,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
   </dcatapit:Distribution>
   <dcatapit:Distribution rdf:about="https://github.com/unipiemonteorientale/UPOopendata/dipartimenti-scuole/csv14">
-    <dcat:accessURL rdf:resource="https://github.com/unipiemonteorientale/UPOopendata/blob/main/24-25-dipartimenti-UPO.csv"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/unipiemonteorientale/UPOopendata/refs/heads/main/24-25-dipartimenti-UPO.csv"/>
     <dct:license>
       <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
         <rdf:type rdf:resource="dct:LicenseDocument"/>
